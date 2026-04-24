@@ -4,8 +4,8 @@ import pandas as pd
 import os
 
 # ── Config ────────────────────────────────────────────────────────────────────
-API_URL = os.getenv("API_URL", "https://your-pokemon-api.onrender.com")
-SECRET_KEY = os.getenv("SECRET_KEY", "your-super-secret-key")
+API_URL = os.getenv("API_URL", "https://pokemansapi-2.onrender.com/")
+SECRET_KEY = os.getenv("SECRET_KEY", "sb_secret_qGA67gx1KVIkyZ16TywCQg_gKeFIL_o")
 HEADERS = {"Authorization": f"Bearer {SECRET_KEY}"}
 
 POKEMON_TYPES = [
