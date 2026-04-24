@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: pokemon-streamlit
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run app.py --server.port $PORT --server.address 0.0.0.0
+    envVars:
+      - key: API_URL
+        value: https://your-pokemon-api.onrender.com   # replace with your FastAPI URL
+      - key: SECRET_KEY
+        value: your-super-secret-key
