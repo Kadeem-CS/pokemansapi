@@ -142,10 +142,10 @@ st.markdown('<div class="sub-header">Search · Create · Retrieve · Update · D
 # Health check banner
 health, err = api_get("/health")
 if err:
-    st.error(f"⚠️ Cannot reach API at **{API_URL}** — check your API_URL env variable. ({err})")
+    st.warning(f"⏳ API is waking up, please wait 30 seconds and refresh the page.")
 else:
     st.success(f"✅ Connected to API: `{API_URL}`")
-
+    
 st.divider()
 
 # ── Tabs ──────────────────────────────────────────────────────────────────────
